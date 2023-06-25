@@ -15,6 +15,10 @@ app.use(cors());
 app.use('/posts', postRoutes);
 app.use('/user', userRouter);
 
+app.get('/', function (req, res) {
+  res.send('Hello to memory app server!');
+});
+
 const username = encodeURIComponent('akdarkshadow');
 const password = encodeURIComponent('akdarkshadow@5127');
 
